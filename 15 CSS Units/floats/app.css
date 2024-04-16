@@ -1,0 +1,18 @@
+p {
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+img {
+  width: 400px;
+  float: left;
+  margin-top: 100px;
+  /* margin-right: 100px; */
+}
+
+.container {
+  width: 1000px;
+  border: 2px solid red;
+}
+
+/* glue element to one side of the container, other elements like text will flow around it, margins get weird, don't use for layouts */

@@ -1,0 +1,50 @@
+/* !The Cascade 
+1. Importance (!important, animations)
+2. Origin (custom > default styles)
+3. Specificity
+4. Position (whichever was last)
+*/
+
+/* * Specificity
+1. Inline Styles
+2. ID Selectors
+3. Class, Attribute, Pseudo-Class
+4. Type(Element), Pseudo-Elements 
+
+hover over selector in vs-code for specificity calculation
+*/
+
+p {
+  color: olive;
+  font-family: fantasy;
+}
+
+.featured {
+  color: orangered;
+  font-size: 20px;
+}
+
+#special {
+  color: magenta;
+}
+
+.hello + .main > h1 {
+  font-weight: bold;
+}
+
+.featured {
+  color: black;
+}
+
+p:nth-of-type(3) {
+  color: yellow;
+}
+
+#heading {
+  color: purple;
+}
+
+/* - !important beats everything else, use as little as possible */
+h1 {
+  color: olive !important;
+}

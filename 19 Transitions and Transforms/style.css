@@ -1,0 +1,85 @@
+.btn {
+  color: orangered;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 30px;
+  display: inline-block;
+  text-decoration: none;
+  /* anytime background-color changes, do it over 0.5s */
+  transition: all 0.5s;
+  /* transition: <property> <duration> <timing-function> <delay>; */
+  transition: background-color 1s ease-in 1s, color 0.5s ease-out 1s;
+}
+
+.btn:hover {
+  /* only when you start hovering, when you stop it goes away immediately */
+  /* transition: background-color 0.5s; */
+  background-color: orangered;
+  color: white;
+}
+
+.btn2 {
+  color: orangered;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 30px;
+  display: inline-block;
+  text-decoration: none;
+  /* can use different predefined timing functions or custom bezier curves */
+  transition: transform 1s ease-out;
+}
+.btn2:hover {
+  transform: translateX(100px);
+}
+/* mdn Animatable CSS Properties
+  recommended: opacity, transform
+  not recommended: margin, width */
+
+/* transform doesn't change layout like margin does */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  display: inline-block;
+}
+.first {
+  background-color: orangered;
+  transform: translateX(400px);
+  transform: translateX(150%);
+  transform: translateX(-50px);
+  transform: translateY(200px);
+  transform: translate(100px, 200px);
+  transform: rotate(45deg);
+}
+h1 {
+  display: inline-block;
+  border: 1px solid black;
+  transform: rotate(4deg);
+  transform: rotateX(120deg);
+  transform: rotateY(60deg);
+  /* same as rotate */
+  transform: rotateZ(60deg);
+  margin-right: 50px;
+}
+h2 {
+  display: inline-block;
+  border: 1px solid black;
+  transform: scaleY(2);
+  transform: scaleX(3);
+  margin-right: 150px;
+}
+.second {
+  background-color: orange;
+  transform: scale(2, 3);
+}
+.third {
+  background-color: greenyellow;
+  transform-origin: bottom right;
+  transform: rotate(45deg);
+  margin-right: 200px;
+}
+h3 {
+  border: 1px solid black;
+  display: inline-block;
+  transform: rotate(-20deg) scale(3);
+}

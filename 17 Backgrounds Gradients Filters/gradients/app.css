@@ -1,0 +1,30 @@
+.box {
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+  /* degrees or keywords for direction, then colors (with width maybe), can use multiple */
+  background-image: linear-gradient(170deg, cyan, yellow, magenta);
+  background-image: linear-gradient(to bottom right, cyan, yellow, magenta);
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background-image: linear-gradient(135deg, orange 60%, cyan);
+}
+.box2 {
+  border: 2px solid black;
+  height: 400px;
+  width: 700px;
+  background-image: radial-gradient(circle at bottom, orangered, orange, cyan);
+}
+.box3 {
+  border: 2px solid black;
+  height: 400px;
+  width: 700px;
+  background-image: conic-gradient(cyan 30%, yellow 30%, magenta, cyan);
+}
+.box4 {
+  border: 2px solid black;
+  height: 400px;
+  width: 700px;
+  background-image: repeating-linear-gradient(45deg, blue, red 33%);
+}

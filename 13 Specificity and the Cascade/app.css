@@ -1,0 +1,121 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Merriweather, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* p {
+  color: purple;
+}
+
+.tag {
+  color: orange;
+}
+
+#featured {
+  color: gold;
+}
+
+input[type="number"] {
+  background-color: gold;
+}
+
+a[href*="wiki"] {
+  color: cyan;
+}
+
+a[href^="#"] {
+  color: darkviolet;
+}
+
+.score,
+#featured,
+.tag {
+  color: white;
+  background-color: orangered;
+} */
+
+/* #cast span {
+  color: grey;
+}
+
+ol > li {
+  border: 1px solid red;
+} */
+
+/* h2 ~ p {
+  color: deeppink;
+} */
+
+/* Sibling Combinators */
+/* Adjacent, directly after first element */
+h2 + p {
+  color: deeppink;
+}
+/* Sibling, multiple elements AFTER first element */
+h2 ~ p {
+  color: deeppink;
+}
+
+/* Pseudo Classes */
+h2:hover {
+  color: orange;
+}
+input:placeholder-shown {
+  background-color: yellow;
+}
+input:disabled {
+  background-color: red;
+}
+a:visited {
+  color: olive;
+}
+li:first-of-type {
+  border: 1px solid magenta;
+}
+li:last-of-type {
+  border: 1px solid cyan;
+}
+/* every 2nd repeating, starting at 1 */
+li:nth-of-type(2n + 1) {
+  border: 2px solid green;
+}
+/* actively being clicked */
+button:active {
+  background-color: pink;
+}
+input:focus {
+  border: 5px solid blue;
+}
+/* don't select everything else with not, otherwise you select body and head etc. */
+h2:not(#reviews) {
+  border: 1px solid yellowgreen;
+}
+
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+p:first-of-type:first-letter {
+  font-size: 200%;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}

@@ -1,0 +1,22 @@
+.container {
+  font-family: sans-serif;
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+
+  display: grid;
+  /* minmax sets lower and upper boundaries */
+  /* grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
+  grid-template-columns: minmax(200px, 2fr) minmax(200px, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* auto expands to accomodate size of the content */
+  grid-template-rows: minmax(100px, auto);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}

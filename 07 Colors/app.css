@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(246, 176, 23);
+  background-color: #ffff00;
+  /* can be shortened if the pairs are the same */
+  background-color: #ff0;
+}
+
+h1 {
+  /* alpha channel for transparency */
+  background-color: rgba(238, 22, 238, 0.7);
+}
+
+h2 {
+  background-color: cyan;
+  /* opacity for the whole element */
+  opacity: 0.5;
+}
+
+a {
+  color: cyan;
+  background-color: magenta;
+}
+
+ul {
+  color: yellowgreen;
+}
+
+span {
+  color: orange;
+}
+
+/* color is inherited, border isn't */
+div {
+  color: red;
+  border: 1px solid blue;
+}
+
+p {
+  /* forces inheritance from parent */
+  /* border: inherit; */
+}

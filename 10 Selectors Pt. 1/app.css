@@ -1,0 +1,68 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+}
+
+p {
+  color: purple;
+}
+
+.tag {
+  color: orange;
+}
+
+#featured {
+  color: gold;
+}
+
+input[type='number'] {
+  background-color: gold;
+}
+
+a[href*='wiki'] {
+  color: cyan;
+}
+
+a[href^='#'] {
+  color: darkviolet;
+}
+
+body {
+  font-family: Merriweather, serif;
+}
+
+/* combines selections */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans';
+}
+
+#featured,
+.score,
+.tag {
+  /* background-color: orangered; */
+}
+
+/* selects descendants */
+#cast span {
+  color: gray;
+}
+
+/* selects only direct children */
+ol > li {
+  border: 1px solid red;
+}
+
+/* selects h2s with the class of score */
+h2.score {
+  color: blueviolet;
+}
+
+/* selects elements with both classes */
+.big.score {
+  color: blanchedalmond;
+}

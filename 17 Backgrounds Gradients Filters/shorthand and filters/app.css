@@ -1,0 +1,25 @@
+.box {
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+  background: url('images/peacock.png') no-repeat center/100%,
+    url('images/sunset.jpg') left;
+}
+.box2 {
+  border: 2px solid black;
+  height: 700px;
+  width: 700px;
+  background-image: url('images/people.jpg');
+  background-size: cover;
+  /* gaussian blur */
+  filter: blur(10px);
+}
+/* works on images too */
+.img1 {
+  width: 500px;
+  filter: grayscale() contrast(150%);
+  filter: saturate(150%);
+  filter: hue-rotate(180deg);
+  /* affects border too */
+  border: 10px solid pink;
+}

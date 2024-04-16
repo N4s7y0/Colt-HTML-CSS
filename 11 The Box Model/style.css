@@ -1,0 +1,117 @@
+h1 {
+  /* border-width: 8px;
+  border-color: gold;
+  border-style: inset;
+  border-right-color: red;
+  border-bottom-style: dotted; */
+
+  border: 2px solid green;
+  /* border-top-color: purple; */
+
+  /* border-bottom: 3px dashed magenta; */
+
+  width: 500px;
+  height: 60px;
+}
+
+#container {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.box {
+  border: 1px solid orange;
+  height: 50%;
+  width: 50%;
+}
+
+#link {
+  font-size: 30px;
+  border: 1px solid red;
+  padding-right: 30px;
+  /* all sides */
+  padding: 20px;
+  /* top, right, bottom, left */
+  padding: 5px 10px 15px 20px;
+  /* top+bottom, left+right */
+  padding: 0 20px;
+}
+
+h2 {
+  border: 1px solid salmon;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin: 10px 20px 30px 40px;
+  margin: 20px 50px;
+}
+#link2 {
+  border: 1px solid olive;
+}
+
+.box-model {
+  background-color: purple;
+  margin: 30px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid cyan;
+  padding: 10px;
+}
+
+#alternate {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+}
+
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  height: 50px;
+  width: 100px;
+  display: block;
+  display: inline-block;
+}
+
+#h2 {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+  display: inline;
+}
+
+.box2 {
+  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+h3 {
+  /* element completely disappears from document */
+  display: none;
+  /* just makes it invisible, still takes up space */
+  /* opacity: 0; */
+}
+
+h4 {
+  margin: -15px;
+}
+
+#container {
+  border: 1px solid purple;
+  background-color: lavenderblush;
+  height: 400px;
+  width: 400px;
+}
+
+#container h6 {
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+}

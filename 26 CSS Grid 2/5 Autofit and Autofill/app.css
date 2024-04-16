@@ -1,0 +1,23 @@
+.container {
+  font-family: sans-serif;
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  /* grid-template: repeat(2, 200px) / repeat(4, 200px); */
+  /* makes grid responsive by figuring out how many columns fit into a specific width */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.fit {
+  /* difference is what you do if there is enough space for another column but no content to put there. auto-fill shows the empty space, auto-fit grows the other columns instead */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

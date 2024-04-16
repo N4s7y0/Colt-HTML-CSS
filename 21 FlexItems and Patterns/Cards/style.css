@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  background: linear-gradient(cyan, purple);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 10px;
+}
+.card footer {
+  background-color: purple;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  /* pushes in opposite direction */
+  margin-top: auto;
+}

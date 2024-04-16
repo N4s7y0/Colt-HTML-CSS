@@ -1,0 +1,23 @@
+.container {
+  font-family: sans-serif;
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  /* no space on outer ages, only between grid items */
+  column-gap: 20px;
+  row-gap: 1cm;
+  /* shorthand, grid-gap is replaced by gap */
+  grid-gap: 20px;
+  gap: 10px 40px;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}

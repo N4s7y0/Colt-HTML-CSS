@@ -1,0 +1,68 @@
+body {
+  background-color: orange;
+  font-family: sans-serif;
+}
+
+/* applies styles up to 800px viewport width */
+@media (max-width: 800px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* applies styles at >= 1200px */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* only prevents older browser that don't support media queries from applying them */
+/* screen a media type like print or all, helps write styles for different situations */
+h1 {
+  font-size: 3rem;
+}
+@media only print {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+/* with 2 conflicting media queries the order matters */
+
+/* other media features
+  width: exact width
+  min-height etc.
+  orientation: portrait or landscape (width < height or not)
+  resolution, min- or max, in dpi
+  */
+@media only screen and (orientation: portrait) {
+  h1::before {
+    content: 'portrait ';
+  }
+}
+
+/* supports logical operators
+  and
+  or
+  not
+   */
+@media (max-width: 300px) or (min-width: 1500px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/* not supported in all browsers 
+  look at media query level 4/5 */
+@media (width < 200px) {
+  body {
+    background-color: olive;
+  }
+}
+
+/* !commonn breakpoints
+  mobile: 0-480px
+  tablet: 481px - 768px
+  small desktop: 769px - 1024px
+  large desktop: > 1024px
+  rough guideline, test your layout and set own breakpoints */

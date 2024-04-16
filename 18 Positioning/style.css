@@ -1,0 +1,76 @@
+.first p {
+  border: 1px solid black;
+  background-color: magenta;
+  margin: 30px;
+  font-size: 2rem;
+  /* !position: static
+  default value, top, right, bottom, left and z-index have no effect */
+  position: static;
+  /* top: 20px; */
+
+  /* z-index only works on positioned elements, higher means foreground */
+  position: relative;
+  z-index: 2;
+}
+
+#special {
+  /* !position: relative
+  still fits in the normal flow but top, right, bottom, left and z-index can be used to move from normal position, original space is still maintained */
+  position: relative;
+  background-color: yellow;
+  top: 80px;
+  left: 40px;
+  z-index: 1;
+}
+
+.box {
+  background-color: olive;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+.special {
+  background-color: orangered;
+  /* !position: absolute
+      element is removed from normal document flow and is now relative to the nearest parent element with an explicit position property 
+      if no parent has a position property, it's relative to the root container
+      no space is preserved for it 
+      top, right, bottom, left and z-index can be used to move
+      scrollable */
+  position: absolute;
+  top: 350px;
+  left: 0;
+}
+
+.box2 {
+  background-color: olive;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  position: relative;
+}
+.box2 span {
+  color: white;
+  background-color: orchid;
+  position: absolute;
+  right: 0;
+}
+
+/* !fixed
+  element isi removed from normal document flow is ALWAYS positioned relative to the ROOT container
+  no space is preserved 
+  top, right, bottom, left and z-index can be used to move
+  when you scroll it stays in place */
+
+span {
+  font-size: 2rem;
+  background-color: orchid;
+  color: white;
+  position: fixed;
+  display: block;
+  width: 100%;
+  padding: 30px;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}

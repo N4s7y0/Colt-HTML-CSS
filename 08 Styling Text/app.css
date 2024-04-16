@@ -1,0 +1,28 @@
+h1 {
+  font-family: 'Segoe UI', Futura, sans-serif;
+  font-size: 36px;
+  /* = normal */
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+p {
+  /* = bold */
+  font-weight: 700;
+  /* word-spacing: 20px; */
+  /* no unit = multiplier, better if you change font */
+  line-height: 2;
+}
+
+a {
+  /* lighter than parent */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* text-align: justify; */
+}

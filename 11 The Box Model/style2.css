@@ -1,0 +1,50 @@
+/* 2 block elements on top of each other collapse the margins between them, only the higher value is used, horizontal margins don't collapse */
+p {
+  border: 1px solid mediumseagreen;
+  margin: 20px 0 50px 0;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.box {
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  height: 200px;
+  background-color: mediumvioletred;
+  margin: 0 auto;
+}
+
+/* border radius */
+.box2 {
+  height: 100px;
+  width: 150px;
+  background-color: forestgreen;
+  border-radius: 50%;
+  border-radius: 10px 20px 30px 40px;
+}
+
+.box3 {
+  width: 300px;
+  height: 300px;
+  /* border: 3px solid grey; */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+
+  font-size: 30px;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: visible;
+  overflow-x: hidden;
+
+  padding: -10px;
+}
+
+span {
+  width: 300px;
+  background-color: red;
+  display: inline-block;
+}

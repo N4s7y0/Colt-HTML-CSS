@@ -1,0 +1,23 @@
+.container {
+  font-family: sans-serif;
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  /* set parent element to either grid or inline-grid */
+  display: grid;
+  /* containers can define columns and rows */
+  /* fr = fraction, represents even proportion of the grid */
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 50% 37%;
+  grid-template-columns: 100px 200px;
+  /* px go first, fr takes up rest */
+  grid-template-columns: 150px 1fr 150px;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
